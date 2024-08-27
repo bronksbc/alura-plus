@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --branco-principal: #ffffff;
+    --cinza-segundario: #c0c0c0;
+    --botao-azul: #167bf7;  
+    --cor-bg: #00030C;  
+    --fonte-principal: 'inter';
+    --botao-azul-hover: #69a8f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-bg) ;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.hero{
+    background-image: url(/IMG/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container-caixa{
+    margin: 0 6rem;
+}
+
+.container-titulo{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.container-imagem{
+    margin: 1rem 0 2rem 0;
+}
+
+.container-botao{
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.container-botao:hover{
+    background-color: var(--botao-azul-hover);
+}
+
+.container-botao-secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container-aviso{
+    font-size: 12px;
+    color: var(--cinza-segundario);
+}
+
+.container-secundario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 6rem 8rem 6rem;
+    gap: 5rem;
+}
+
+.container-secundario-imagem{
+    width: 35%;
+}
+
+.container-secundario-titulo{
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--branco-principal);
+    margin-bottom: 0.1rem;
+}
+
+.container-secundario-texto{
+    color: var(--cinza-segundario);
+    margin-bottom: 1rem;
+}
+
+.secundario-botao{
+    display: inline-block;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos-lista{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 6rem 5rem 6rem;
+    list-style: none;
+}
+
+.dispositivos-titulo{
+    font-size: 3rem;
+    color: var(--branco-principal);
+}
+
+.lista-item{
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+.lista-rodape a{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista-rodape a:hover{
+    color: var(--botao-azul);
+}
+
+.rodape{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.rodape-lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 1.5rem;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.rodape-texto{
+    font-size: 0.9rem;
+    color: var(--cinza-segundario);
+}
